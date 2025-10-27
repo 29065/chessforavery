@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess AI Deluxe ♟️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>♟️ Chess AI Deluxe</h1>
+
+  <div id="menu">
+    <label>Theme:
+      <select id="themeSelect">
+        <option value="brown">Brown</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+    </label>
+
+    <label>AI Strength:
+      <input type="range" id="skill" min="0" max="20" value="5">
+      <span id="skillLabel">5</span>
+    </label>
+
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <div id="board"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chessboardjs@1.0.0/www/js/chessboard-1.0.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chess.js@latest/dist/chess.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/stockfish/src/stockfish.wasm.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
